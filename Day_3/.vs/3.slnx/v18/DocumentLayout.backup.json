@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Practika CSharp\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{22A096EA-330E-41E3-8A0D-9787B9777ACF}|Task2\\Task2.csproj|d:\\practika csharp\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\3\\task2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22A096EA-330E-41E3-8A0D-9787B9777ACF}|Task2\\Task2.csproj|solutionrelative:task2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{101414EF-538B-45A8-97F7-13A114A6CCBB}|Task1\\Task1.csproj|d:\\practika csharp\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\3\\task1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{101414EF-538B-45A8-97F7-13A114A6CCBB}|Task1\\Task1.csproj|solutionrelative:task1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Practika CSharp\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\3\\Task2\\Program.cs",
+              "RelativeDocumentMoniker": "Task2\\Program.cs",
+              "ToolTip": "D:\\Practika CSharp\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\3\\Task2\\Program.cs",
+              "RelativeToolTip": "Task2\\Program.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAgwEgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T07:07:41.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Practika CSharp\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\3\\Task1\\Program.cs",
+              "RelativeDocumentMoniker": "Task1\\Program.cs",
+              "ToolTip": "D:\\Practika CSharp\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\3\\Task1\\Program.cs",
+              "RelativeToolTip": "Task1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T07:04:01.024Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
