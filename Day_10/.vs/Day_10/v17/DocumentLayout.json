@@ -1,0 +1,207 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Day_10\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{872E015B-D27F-43BA-9A00-741B2DB03FB1}|Day_10\\Day_10.csproj|d:\\day_10\\day_10\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{872E015B-D27F-43BA-9A00-741B2DB03FB1}|Day_10\\Day_10.csproj|solutionrelative:day_10\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2527751-5A96-4B56-8A70-B7335536E9EA}|Task3\\Task3.csproj|d:\\day_10\\task3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2527751-5A96-4B56-8A70-B7335536E9EA}|Task3\\Task3.csproj|solutionrelative:task3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2527751-5A96-4B56-8A70-B7335536E9EA}|Task3\\Task3.csproj|d:\\day_10\\task3\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2527751-5A96-4B56-8A70-B7335536E9EA}|Task3\\Task3.csproj|solutionrelative:task3\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2527751-5A96-4B56-8A70-B7335536E9EA}|Task3\\Task3.csproj|d:\\day_10\\task3\\onlinestore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2527751-5A96-4B56-8A70-B7335536E9EA}|Task3\\Task3.csproj|solutionrelative:task3\\onlinestore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2527751-5A96-4B56-8A70-B7335536E9EA}|Task3\\Task3.csproj|d:\\day_10\\task3\\icustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2527751-5A96-4B56-8A70-B7335536E9EA}|Task3\\Task3.csproj|solutionrelative:task3\\icustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93E4230F-08A8-478A-9B6D-4A8A1C9F8E1F}|Task2\\Task2.csproj|d:\\day_10\\task2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93E4230F-08A8-478A-9B6D-4A8A1C9F8E1F}|Task2\\Task2.csproj|solutionrelative:task2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93E4230F-08A8-478A-9B6D-4A8A1C9F8E1F}|Task2\\Task2.csproj|d:\\day_10\\task2\\userratingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93E4230F-08A8-478A-9B6D-4A8A1C9F8E1F}|Task2\\Task2.csproj|solutionrelative:task2\\userratingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93E4230F-08A8-478A-9B6D-4A8A1C9F8E1F}|Task2\\Task2.csproj|d:\\day_10\\task2\\simplerating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93E4230F-08A8-478A-9B6D-4A8A1C9F8E1F}|Task2\\Task2.csproj|solutionrelative:task2\\simplerating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93E4230F-08A8-478A-9B6D-4A8A1C9F8E1F}|Task2\\Task2.csproj|d:\\day_10\\task2\\machinelearningrating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93E4230F-08A8-478A-9B6D-4A8A1C9F8E1F}|Task2\\Task2.csproj|solutionrelative:task2\\machinelearningrating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93E4230F-08A8-478A-9B6D-4A8A1C9F8E1F}|Task2\\Task2.csproj|d:\\day_10\\task2\\complexrating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93E4230F-08A8-478A-9B6D-4A8A1C9F8E1F}|Task2\\Task2.csproj|solutionrelative:task2\\complexrating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93E4230F-08A8-478A-9B6D-4A8A1C9F8E1F}|Task2\\Task2.csproj|d:\\day_10\\task2\\iratingstrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93E4230F-08A8-478A-9B6D-4A8A1C9F8E1F}|Task2\\Task2.csproj|solutionrelative:task2\\iratingstrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OnlineStore.cs",
+              "DocumentMoniker": "D:\\Day_10\\Task3\\OnlineStore.cs",
+              "RelativeDocumentMoniker": "Task3\\OnlineStore.cs",
+              "ToolTip": "D:\\Day_10\\Task3\\OnlineStore.cs",
+              "RelativeToolTip": "Task3\\OnlineStore.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T07:10:53.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "D:\\Day_10\\Task3\\Customer.cs",
+              "RelativeDocumentMoniker": "Task3\\Customer.cs",
+              "ToolTip": "D:\\Day_10\\Task3\\Customer.cs",
+              "RelativeToolTip": "Task3\\Customer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T07:10:35.895Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ICustomer.cs",
+              "DocumentMoniker": "D:\\Day_10\\Task3\\ICustomer.cs",
+              "RelativeDocumentMoniker": "Task3\\ICustomer.cs",
+              "ToolTip": "D:\\Day_10\\Task3\\ICustomer.cs",
+              "RelativeToolTip": "Task3\\ICustomer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T07:10:21.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Day_10\\Task3\\Program.cs",
+              "RelativeDocumentMoniker": "Task3\\Program.cs",
+              "ToolTip": "D:\\Day_10\\Task3\\Program.cs",
+              "RelativeToolTip": "Task3\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T07:07:55.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserRatingService.cs",
+              "DocumentMoniker": "D:\\Day_10\\Task2\\UserRatingService.cs",
+              "RelativeDocumentMoniker": "Task2\\UserRatingService.cs",
+              "ToolTip": "D:\\Day_10\\Task2\\UserRatingService.cs",
+              "RelativeToolTip": "Task2\\UserRatingService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T07:04:10.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MachineLearningRating.cs",
+              "DocumentMoniker": "D:\\Day_10\\Task2\\MachineLearningRating.cs",
+              "RelativeDocumentMoniker": "Task2\\MachineLearningRating.cs",
+              "ToolTip": "D:\\Day_10\\Task2\\MachineLearningRating.cs",
+              "RelativeToolTip": "Task2\\MachineLearningRating.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T07:03:18.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ComplexRating.cs",
+              "DocumentMoniker": "D:\\Day_10\\Task2\\ComplexRating.cs",
+              "RelativeDocumentMoniker": "Task2\\ComplexRating.cs",
+              "ToolTip": "D:\\Day_10\\Task2\\ComplexRating.cs",
+              "RelativeToolTip": "Task2\\ComplexRating.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T07:02:32.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Day_10\\Day_10\\Program.cs",
+              "RelativeDocumentMoniker": "Day_10\\Program.cs",
+              "ToolTip": "D:\\Day_10\\Day_10\\Program.cs",
+              "RelativeToolTip": "Day_10\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T06:57:16.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SimpleRating.cs",
+              "DocumentMoniker": "D:\\Day_10\\Task2\\SimpleRating.cs",
+              "RelativeDocumentMoniker": "Task2\\SimpleRating.cs",
+              "ToolTip": "D:\\Day_10\\Task2\\SimpleRating.cs",
+              "RelativeToolTip": "Task2\\SimpleRating.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T07:02:18.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IRatingStrategy.cs",
+              "DocumentMoniker": "D:\\Day_10\\Task2\\IRatingStrategy.cs",
+              "RelativeDocumentMoniker": "Task2\\IRatingStrategy.cs",
+              "ToolTip": "D:\\Day_10\\Task2\\IRatingStrategy.cs",
+              "RelativeToolTip": "Task2\\IRatingStrategy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T07:02:00.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Day_10\\Task2\\Program.cs",
+              "RelativeDocumentMoniker": "Task2\\Program.cs",
+              "ToolTip": "D:\\Day_10\\Task2\\Program.cs",
+              "RelativeToolTip": "Task2\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T06:58:58.315Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
