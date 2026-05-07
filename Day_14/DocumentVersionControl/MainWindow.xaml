@@ -1,0 +1,271 @@
+﻿<Window x:Class="DocumentVersionControl.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="clr-namespace:DocumentVersionControl.ViewModels"
+        mc:Ignorable="d"
+        Title="Система контроля версий документов" Height="550" Width="900"
+        Focusable="True">
+
+    <Window.Resources>
+        <!-- Стиль для кастомной кнопки Добавить -->
+        <Style TargetType="Button" x:Key="AddButtonStyle">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="#FF4CAF50" 
+                                CornerRadius="5" 
+                                BorderBrush="#FF388E3C" 
+                                BorderThickness="1"
+                                Padding="8,5">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Cursor" Value="Hand"/>
+                                <Setter Property="Background" Value="#FF66BB6A"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="#FF2E7D32"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Стиль для кастомной кнопки История -->
+        <Style TargetType="Button" x:Key="HistoryButtonStyle">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="#FF2196F3" 
+                                CornerRadius="5" 
+                                BorderBrush="#FF1976D2" 
+                                BorderThickness="1"
+                                Padding="8,5">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Cursor" Value="Hand"/>
+                                <Setter Property="Background" Value="#FF42A5F5"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="#FF1565C0"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Стиль для кастомной кнопки Удалить -->
+        <Style TargetType="Button" x:Key="DeleteButtonStyle">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="#FFF44336" 
+                                CornerRadius="5" 
+                                BorderBrush="#FFD32F2F" 
+                                BorderThickness="1"
+                                Padding="8,5">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Cursor" Value="Hand"/>
+                                <Setter Property="Background" Value="#FFEF5350"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="#FFC62828"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <Window.DataContext>
+        <vm:MainViewModel/>
+    </Window.DataContext>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Menu -->
+        <Menu Grid.Row="0">
+            <MenuItem Header="Файл">
+                <MenuItem Header="Выход" InputGestureText="Alt+F4" Click="ExitClick"/>
+            </MenuItem>
+            <MenuItem Header="Документы">
+                <MenuItem Header="Добавить версию" InputGestureText="Ctrl+N" Command="{Binding AddVersionCommand}"/>
+                <MenuItem Header="Просмотреть историю" InputGestureText="Ctrl+H" Command="{Binding ViewHistoryCommand}"/>
+                <MenuItem Header="Удалить версию" InputGestureText="Ctrl+D" Command="{Binding DeleteVersionCommand}"/>
+            </MenuItem>
+            <MenuItem Header="Настройки">
+                <MenuItem Header="О программе" Click="AboutClick"/>
+            </MenuItem>
+        </Menu>
+
+        <!-- ToolBar с кастомными кнопками -->
+        <ToolBar Grid.Row="1">
+            <Button Command="{Binding AddVersionCommand}" 
+                    Style="{StaticResource AddButtonStyle}"
+                    ToolTip="Добавить версию (Ctrl+N)">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="➕ "/>
+                    <TextBlock Text="Добавить версию"/>
+                    <TextBlock Text=" (Ctrl+N)" Foreground="LightGray" FontSize="10"/>
+                </StackPanel>
+            </Button>
+            <Separator/>
+            <Button Command="{Binding ViewHistoryCommand}" 
+                    Style="{StaticResource HistoryButtonStyle}"
+                    ToolTip="Просмотреть историю (Ctrl+H)">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="📋 "/>
+                    <TextBlock Text="История"/>
+                    <TextBlock Text=" (Ctrl+H)" Foreground="LightGray" FontSize="10"/>
+                </StackPanel>
+            </Button>
+            <Separator/>
+            <Button Command="{Binding DeleteVersionCommand}" 
+                    Style="{StaticResource DeleteButtonStyle}"
+                    ToolTip="Удалить версию (Ctrl+D)">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="❌ "/>
+                    <TextBlock Text="Удалить версию"/>
+                    <TextBlock Text=" (Ctrl+D)" Foreground="LightGray" FontSize="10"/>
+                </StackPanel>
+            </Button>
+        </ToolBar>
+
+        <!-- DataGrid с кастомным шаблоном -->
+        <DataGrid x:Name="VersionsDataGrid"
+                  Grid.Row="2" 
+                  ItemsSource="{Binding Versions}" 
+                  SelectedItem="{Binding SelectedVersion}"
+                  AutoGenerateColumns="False"
+                  Margin="10"
+                  IsReadOnly="False"
+                  AlternatingRowBackground="#FFF9F9F9"
+                  RowHeight="40">
+
+            <DataGrid.Resources>
+                <!-- Стиль для выделенных строк -->
+                <Style TargetType="DataGridRow">
+                    <Setter Property="Background" Value="White"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="Background" Value="#FFE3F2FD"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#FFF5F5F5"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </DataGrid.Resources>
+
+            <DataGrid.Columns>
+                <!-- ID колонка -->
+                <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="50"/>
+
+                <!-- Версия с кастомным шаблоном -->
+                <DataGridTemplateColumn Header="Версия" Width="120">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Border Background="#FFE8F5E9" CornerRadius="5" Padding="5" Margin="2">
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="📄 " FontSize="12"/>
+                                    <TextBlock Text="{Binding VersionNumber}" FontWeight="Bold" Foreground="#FF2E7D32"/>
+                                </StackPanel>
+                            </Border>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <!-- Дата создания с иконкой -->
+                <DataGridTemplateColumn Header="Дата создания" Width="160">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal" Margin="2">
+                                <TextBlock Text="📅 " FontSize="12"/>
+                                <TextBlock Text="{Binding CreatedDate, StringFormat='dd.MM.yyyy HH:mm'}" Foreground="#FF1565C0"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <!-- Описание с возможностью редактирования -->
+                <DataGridTemplateColumn Header="Описание" Width="*">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Description}" 
+                                       TextWrapping="Wrap"
+                                       Foreground="#FF424242"
+                                       ToolTip="Дважды кликните для редактирования"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                    <DataGridTemplateColumn.CellEditingTemplate>
+                        <DataTemplate>
+                            <TextBox Text="{Binding Description, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+                                     TextWrapping="Wrap"
+                                     AcceptsReturn="True"
+                                     Background="#FFFFF176"
+                                     BorderBrush="#FFFFA000"
+                                     BorderThickness="1"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellEditingTemplate>
+                </DataGridTemplateColumn>
+
+                <!-- Путь к файлу с иконкой -->
+                <DataGridTemplateColumn Header="Файл" Width="200">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal" Margin="2">
+                                <TextBlock Text="📁 " FontSize="12"/>
+                                <TextBlock Text="{Binding FilePath}" 
+                                           Foreground="#FF757575"
+                                           FontSize="11"
+                                           TextTrimming="CharacterEllipsis"
+                                           ToolTip="{Binding FilePath}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <!-- Status Bar с двусторонней привязкой -->
+        <StatusBar Grid.Row="3">
+            <StatusBarItem>
+                <TextBlock Text="Готов к работе"/>
+            </StatusBarItem>
+            <Separator/>
+            <StatusBarItem>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Выбрано: "/>
+                    <TextBlock Text="{Binding SelectedVersion.VersionNumber, Mode=OneWay, FallbackValue='нет'}" 
+                               FontWeight="Bold" Foreground="#FF2196F3"/>
+                </StackPanel>
+            </StatusBarItem>
+            <Separator/>
+            <StatusBarItem>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Всего версий: "/>
+                    <TextBlock Text="{Binding Versions.Count, Mode=OneWay}" 
+                               FontWeight="Bold" Foreground="#FF4CAF50"/>
+                </StackPanel>
+            </StatusBarItem>
+        </StatusBar>
+    </Grid>
+</Window>
